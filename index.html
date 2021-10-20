@@ -6,84 +6,70 @@
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
-    <style>
-      /* Cascating Stylesheet */
-      html,
-      body {
-        height: 100%;
-      }
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-      body {
-        display: grid;
-        place-items: center;
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        background: linear-gradient(
-          180deg,
-          #d04545 0%,
-          rgba(111, 69, 163, 0.841406) 54.69%,
-          rgba(31, 50, 222, 0.71) 100%
-        );
-      }
-
-      h1 {
-        font-size: 3rem;
-        color: rgb(35, 39, 39);
-      }
-
-      h2 {
-        font-size: 2rem;
-        color: rgb(51, 9, 56);
-      }
-
-      h3 {
-        font-size: 2rem;
-        color: rgb(29, 20, 83);
-      }
-
-      a {
-        color: rgb(243, 237, 237);
-        text-decoration: none;
-        margin-right: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      svg {
-        color: rgb(187, 72, 72);
-        margin-right: 0.5rem;
-      }
-      div {
-        display: flex;
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <h1>Jonatas de Souza Cruz</h1>
-    <img
-      src="https://media-exp1.licdn.com/dms/image/C4E03AQGsj_PikcHr4g/profile-displayphoto-shrink_200_200/0/1516861237949?e=1640217600&v=beta&t=ceyrg230RASMahlUKj5QHFOwqhCD5ootKIaNTxxYL58"
-      alt="Foto perfil"
-    />
-    <h2>Engenheiro de Manutenção e Confiabilidade Sênior</h2>
-    <h3>Futuro Desenvolvedor FullStack</h3>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/build.svg" alt="Selo Rockeseat" />
+          </span>
+          <img
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQGsj_PikcHr4g/profile-displayphoto-shrink_200_200/0/1516861237949?e=1640217600&v=beta&t=ceyrg230RASMahlUKj5QHFOwqhCD5ootKIaNTxxYL58"
+            alt="Foto pessoal"
+            class="photo"
+          />
+        </div>
+        <h1>Jonatas de Souza Cruz</h1>
+        <a href="https://github.com/jonatassouza2">
+          <img src="images/github.svg" alt="Ícone github" />
+          jonatassouza2
+        </a>
 
-    <div>
-      <a href="https://github.com/jonatassouza2">
-        <i data-feather="github"></i>
-        Github
-      </a>
+        <p>
+          Engenheiro de Manutenção e Confiabilidade Senior e Futuro Fullstack
+        </p>
 
-      <a href="www.linkedin.com/in/jonatassouzacruz">
-        <i data-feather="linkedin"></i>
-        Linkedin
-      </a>
-
-      <a href="https://instagram.com/jonatassouzza">
-        <i data-feather="instagram"></i>
-        Instagram
-      </a>
-    </div>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jonatassouzacruz/"
+              target="_blank"
+            >
+              <i data-feather="linkedin" class="icon" alt="Ìcone linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/jonatassouzza/" target="_blank">
+              <img src="images/instagram.svg" alt="Ícone instagram" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/jonatas.souza.52056"
+              target="_blank"
+            >
+              <img src="images/facebook.svg" alt="Ícone facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <img src="images/twitter.svg" alt="Ícone twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
 
     <script>
       feather.replace()
