@@ -30,7 +30,7 @@
             class="photo"
           />
         </div>
-        <h1>Jonatas de Souza Cruz</h1>
+        <h1 id="userName">Jonatas de Souza Cruz</h1>
         <a href="https://github.com/jonatassouza2">
           <img src="images/github.svg" alt="Ícone github" />
           jonatassouza2
@@ -40,8 +40,8 @@
           Engenheiro de Manutenção e Confiabilidade Senior e Futuro Fullstack
         </p>
 
-        <ul>
-          <li>
+        <ul id="socialLinks">
+          <li class="linkedin">
             <a
               href="https://www.linkedin.com/in/jonatassouzacruz/"
               target="_blank"
@@ -49,12 +49,12 @@
               <i data-feather="linkedin" class="icon" alt="Ìcone linkedin"></i>
             </a>
           </li>
-          <li>
+          <li class="instagram">
             <a href="https://www.instagram.com/jonatassouzza/" target="_blank">
               <img src="images/instagram.svg" alt="Ícone instagram" />
             </a>
           </li>
-          <li>
+          <li class="facebook">
             <a
               href="https://www.facebook.com/jonatas.souza.52056"
               target="_blank"
@@ -62,7 +62,7 @@
               <img src="images/facebook.svg" alt="Ícone facebook" />
             </a>
           </li>
-          <li>
+          <li class="twitter">
             <a href="https://twitter.com" target="_blank">
               <img src="images/twitter.svg" alt="Ícone twitter" />
             </a>
@@ -73,6 +73,25 @@
 
     <script>
       feather.replace()
+    </script>
+
+    <script>
+      const linksSocialMedia = {
+        github: 'jonatassouza2',
+        linkedin: 'in/jonatassouzacruz',
+        instagram: 'jonatassouzza',
+        facebook: 'jonatas.souza.52056'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+          li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
+          // alert(li.children[0].href)
+        }
+      }
+
+      changeSocialMediaLinks()
     </script>
   </body>
 </html>
